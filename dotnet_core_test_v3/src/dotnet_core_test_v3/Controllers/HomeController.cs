@@ -10,6 +10,7 @@ namespace dotnet_core_test_v3.Controllers
     {
         public IActionResult Index()
         {
+            ViewBag.HiWord = "hi word";
             return View();
         }
 
