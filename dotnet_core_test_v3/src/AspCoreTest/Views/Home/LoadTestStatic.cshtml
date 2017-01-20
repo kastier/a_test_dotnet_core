@@ -1,0 +1,1272 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = null;
+}
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="mobile-agent" content="format=html5; url=http://baa.m.yiche.com/" />
+    ﻿
+    <link rel="stylesheet" href="http://192.168.0.10:8888/A-UED产出物/01-网站产品/102-2016网站改版/css/common.css">
+    <link rel="stylesheet" href="http://192.168.0.10:8888/A-UED产出物/01-网站产品/102-2016网站改版/css/_txt-list.css">
+    <link rel="stylesheet" href="http://192.168.0.10:8888/A-UED产出物/01-网站产品/102-2016网站改版/css/_pic-list.css">
+    <link rel="stylesheet" href="http://192.168.0.10:8888/A-UED产出物/01-网站产品/102-2016网站改版/css/_selection.css">
+    <link rel="stylesheet" href="http://192.168.0.10:8888/A-UED产出物/01-网站产品/102-2016网站改版/css/_screen.css">
+    <link rel="stylesheet" href="http://192.168.0.10:8888/A-UED产出物/01-网站产品/102-2016网站改版/css/树形.css">
+    <link rel="stylesheet" href="http://192.168.0.10:8888/A-UED产出物/01-网站产品/102-2016网站改版/css/经销商列表.css">
+    <link rel="stylesheet" href="http://192.168.0.10:8888/工作/前端/Y_2014改版/A-模块规范/经销商列表.css">
+
+    <link rel="stylesheet" href="http://192.168.0.10:8888/a-ued产出物/01-网站产品/102-2016网站改版/css/navtool-right.css" />
+
+    <link rel="stylesheet" href="http://192.168.0.10:8888/A-UED产出物/01-网站产品/32-论坛/论坛1200拉宽/html/baa_public.css">
+    <link rel="stylesheet" href="http://192.168.0.10:8888/A-UED产出物/01-网站产品/32-论坛/论坛1200拉宽/html/帖子列表详情页/论坛帖子.css">
+    <link rel="stylesheet" href="http://192.168.0.10:8888/A-UED产出物/01-网站产品/32-论坛/论坛1200拉宽/html/帖子列表详情页/表情弹层.css">
+    <link rel="stylesheet" href="http://192.168.0.10:8888/A-UED产出物/01-网站产品/32-论坛/论坛1200拉宽/html/帖子列表详情页/论坛幻灯页.css">
+    <link rel="stylesheet" href="http://192.168.0.10:8888/A-UED产出物/01-网站产品/32-论坛/论坛1200拉宽/html/发帖页/css/fatie.css">
+    <link rel="stylesheet" href="http://192.168.0.10:8888/a-ued产出物/01-网站产品/32-论坛/论坛1200拉宽/html/发帖页/css/edit.css" />
+
+
+
+
+
+
+    <title>【汽车论坛_汽车社区_易车网汽车论坛_车友会】易车会-易车网</title>
+    <meta name="keywords" content="汽车论坛，汽车社区，易车网汽车论坛，车友会，汽车俱乐部，易车会" />
+    <meta name="description" content="汽车论坛(易车会)：全国最热的汽车社区，包含各个品牌汽车论坛、汽车俱乐部及车友会等。交流经验，分享车友聚会快乐。上易车网汽车论坛，汽车生活更精彩！" />
+    <style type="text/css">
+        /*论坛直达的宽度适配*/
+        .brand-form, .brand_bg {
+            width: 240px;
+        }
+
+        .brand_name_bg {
+            width: 198px;
+        }
+    </style>
+</head>
+<body>
+    <span id="yicheAnchor" name="yicheAnchor" style="display: block; height: 0; width: 0;line-height: 0; font-size: 0"></span>
+    <!--顶通-->
+    ﻿<div class="bit_top990">
+        <div class="bit990">
+            <ul class="bitweb">
+                <li class="bityiche"><a target="_blank" href="http://www.bitauto.com/">易车</a></li>
+                <li data-channelid="1.106.1038"><a target="_blank" href="http://www.taoche.com">易车二手车</a></li>
+                <li data-channelid="1.106.1039"><a target="_blank" href="http://www.huimaiche.com/?tracker_u=71_dbtydh" rel="nofollow">易车&bull;惠买车</a></li>
+                <li data-channelid="1.106.1041"><a target="_blank" href="http://mai.bitauto.com/?ref=top1&rfpa_tracker=1_2" rel="nofollow">易车惠</a></li>
+                <li data-channelid="1.106.1485"><a target="_blank" href="http://www.daikuan.com/?from=731" rel="nofollow">易鑫车贷</a></li>
+                <li class="bit_link" onmouseout="document.getElementById('login_app').style.display='none';this.className='bit_link';" onmouseover="document.getElementById('login_app').style.display='';this.className='bit_link bit_hover';" class="bit_link">
+                    <a href="http://app.yiche.com/" target="_blank" rel="nofollow">移动应用<em></em></a>
+                    <div style="display: none;" id="login_app" class="app_list">
+                        <a target="_blank" href="http://m.yiche.com/">手机易车网</a>
+                        <a target="_blank" href="http://app.yiche.com/yiche/" rel="nofollow">易车APP</a>
+
+                        <a target="_blank" href="http://app.yiche.com/qichebaojiadaquan/" rel="nofollow">汽车报价大全</a>
+                        <a target="_blank" href="http://app.yiche.com/huimaiche/" rel="nofollow">惠买车</a>
+                        <a target="_blank" href="http://app.yiche.com/taoche/" rel="nofollow">易车二手车</a>
+                        <a target="_blank" href="http://app.yiche.com/chexingshouce/" rel="nofollow">来一车</a>
+
+                    </div>
+                </li>
+                <li><a target="_blank" href="http://chezhan.bitauto.com/guangzhou-chezhan/">广州车展</a></li>
+
+            </ul>
+            <!--网站导航 start-->
+            <div class="bt_login_box990">
+                <!--start-->
+                <ul>
+                    <!--网站地图-->
+                    ﻿
+                    <li class="last bit_link" id="login_navhover" onmouseover="document.getElementById('login_mapsite').style.display='';this.className='bit_link bit_hover';" onmouseout="document.getElementById('login_mapsite').style.display='none';this.className='bit_link';">
+                        <a target="_blank" href="http://www.bitauto.com/map/map.shtml" rel="nofollow" class="ico_map"><i></i></a>
+                        <dl class="login_mapsite" id="login_mapsite" style="display:none;">
+                            <dt class="noborder">全部频道：</dt>
+                            <dd><a target="_blank" href="http://car.bitauto.com/">车型</a></dd>
+                            <dd><a target="_blank" href="http://photo.bitauto.com/">图片</a></dd>
+                            <dd><a target="_blank" href="http://v.bitauto.com/">视频</a></dd>
+                            <dd><a target="_blank" href="http://www.bitauto.com/huati/">话题</a></dd>
+                            <dd><a target="_blank" href="http://dealer.bitauto.com/">经销商</a></dd>
+                            <dd><a target="_blank" href="http://car.bitauto.com/tree_pingce/">评测</a></dd>
+                            <dd><a target="_blank" href="http://car.bitauto.com/tree_daogou/">导购</a></dd>
+                            <dd><a target="_blank" href="http://price.bitauto.com/">报价</a></dd>
+                            <dd><a target="_blank" href="http://jiangjia.bitauto.com/">降价</a></dd>
+                            <dd><a target="_blank" href="http://www.taoche.com/">二手车</a></dd>
+                            <dd><a target="_blank" href="http://ask.bitauto.com/">问答</a></dd>
+                            <dd><a target="_blank" href="http://koubei.bitauto.com/">口碑</a></dd>
+                            <dd><a target="_blank" href="http://car.bitauto.com/tree_baoyang/">养护</a></dd>
+                            <dd><a target="_blank" href="http://baa.bitauto.com/">论坛</a></dd>
+                            <dd class="noborder"><a target="_blank" href="http://jiaxiao.bitauto.com/">驾校</a></dd>
+
+                            <dt>购车服务：</dt>
+                            <dd><a target="_blank" href="http://beijing.huimaiche.com/?tracker_u=53_ycsydh">底价买车</a></dd>
+                            <dd><a target="_blank" href="http://mai.bitauto.com/?ref=sy2&rfpa_tracker=1_13">超值特惠</a></dd>
+                            <dd class="noborder"><a target="_blank" href="http://temai.yiche.com/?leads_source=p001020" rel="nofollow">限时抢购</a></dd>
+
+                            <dd class="noborder"><a target="_blank" href="http://www.daikuan.com?from=yc16" rel="nofollow">贷款购车</a></dd>
+
+
+
+
+                            <dt>汽车论坛：</dt>
+                            <dd><a target="_blank" href="http://baa.bitauto.com/foruminterrelated/brandforumlist.html">车型论坛</a></dd>
+                            <dd><a target="_blank" href="http://baa.bitauto.com/foruminterrelated/grouplist_3.html">地区论坛</a></dd>
+                            <dd class="noborder"><a target="_blank" href="http://baa.bitauto.com/foruminterrelated/grouplist_2.html">主题论坛</a></dd>
+                            <dd><a target="_blank" href="http://baa.bitauto.com/special/huodong/">网友活动</a></dd>
+                            <dd><a target="_blank" href="http://baa.bitauto.com/bao/">每周精选</a></dd>
+
+                            <dt>实用工具：</dt>
+                            <dd><a target="_blank" href="http://car.bitauto.com/chexingduibi/">车型对比</a></dd>
+                            <dd><a target="_blank" href="http://car.bitauto.com/tupianduibi/">图片对比</a></dd>
+                            <dd class="noborder"><a target="_blank" href="http://car.bitauto.com/gouchejisuanqi/">购车计算器</a></dd>
+
+                            <dd><a target="_blank" href="http://www.bitauto.com/zhuanti/daogou/gsqgl/">购车流程</a></dd>
+                            <dd><a target="_blank" href="http://car.bitauto.com/qichebaoxianjisuan/">车险计算</a></dd>
+                            <dd class="noborder"><a target="_blank" href="http://car.bitauto.com/qichedaikuanjisuanqi/">贷款计算器</a></dd>
+
+                            <dd><a target="_blank" href="http://i.yiche.com/u0/car/jz/">用车记账</a></dd>
+                            <dd><a target="_blank" href="http://i.yiche.com/u0/car/weizhang/">违章查询</a></dd>
+                            <dd class="noborder"><a target="_blank" href="http://m.yiche.com/">手机易车</a></dd>
+                            <dt class="dtmore"><a target="_blank" href="http://www.bitauto.com/map/map.shtml">更多&gt;&gt;</a></dt>
+                        </dl>
+
+                    </li>
+                </ul>
+                <!--end-->
+                <!--baa start-->
+                <ul id="divLoginDivID"></ul>
+                <!--baa end-->
+
+
+            </div>
+            <!--网站导航 end-->
+        </div>
+    </div>
+    <!--侧边栏-->
+    <div id="bitautoSideBarContainer" class="navtool-fixed-right">
+        <div class="navtool-ul" id="navtool-ul">
+            <ul id="headerModulesContainer" class="upper-part"></ul>
+            <ul id="footerModulesContainer" class="lower-part"></ul>
+        </div>
+        <div id="contentContainer" class="navtool-div-list">
+        </div>
+    </div>
+    <script src="http://js.inc.baa.bitautotech.com/c/c.js?s=Bitauto.Login.Version4&v=20150812" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+        Bitauto.Login.init("divLoginDivID");
+    </script>
+    <!--顶通广告-->
+    <div class="container">
+        <ins id="div_1a34bf92-529b-457d-bd20-fd21ca4cdce3" type="ad_play" adplay_ip="" adplay_areaname=""
+             adplay_cityname="" adplay_brandid="" adplay_brandname="" adplay_brandtype=""
+             adplay_blockcode="1a34bf92-529b-457d-bd20-fd21ca4cdce3"></ins>
+    </div>
+    <header class="header-main baahead-box">
+        <!--公共_logo搜索-->
+        ﻿<div class="container section-layout top" id="topBox">
+            <div class="col-xs-6 left-box">
+                <div class="section-left">
+                    <h1 class="logo"><a href="http://www.yiche.com">汽车</a></h1>
+                </div>
+            </div>
+            <div class="col-xs-6 right-box">
+                <!--LOGO热搜通栏-->
+                <ins id="div_dc8eef74-ea78-4278-9c0e-5c6dbe055a03" type="ad_play" adplay_ip="" adplay_areaname=""
+                     adplay_cityname="" adplay_brandid="" adplay_brandname="" adplay_brandtype=""
+                     adplay_blockcode="dc8eef74-ea78-4278-9c0e-5c6dbe055a03"></ins>
+
+                <!--搜索框-->
+                <form id="sug_form" name="sug_form" method="get" target="_blank" action="http://www.cheyisou.com/search">
+                    <div class="btn-form select-box">
+                        <input id="sug_txtkeyword" class="btn-from-control" type="text" class="select_t" name="wd" value="" placeholder="输入试一试" autocomplete="off" maxlength="20" />
+                        <input type="button" id="sug_submit" value="搜索" class="btn btn-primary" />
+                        <div class="sele-box sele-2016">
+                            <div class="brand_bg" id="master-index" style="display: none;">
+                            </div>
+                            <div class="brand_bg  models_bg " id="serial-index" style="display: none;">
+                            </div>
+                            <div id="sug_container" style="display: none;">
+                            </div>
+                        </div>
+                        <input type="hidden" name="t" value="qiche" />
+                        <input type="hidden" name="h" value="0" id="sug_handler" />
+                        <input type="hidden" id="sugcsurl" name="sugcsurl" value="" />
+                    </div>
+                </form>
+                <script src="http://image.bitautoimg.com/carchannel/jsnew/yicheSug.min.js?v=20160426" type="text/javascript" charset="utf-8"></script>
+                <script type="text/javascript">
+    BitautoAutoComplete();
+                </script>
+
+            </div>
+        </div>
+        <!--公共导航-->
+        <div id="navBox">
+            <nav class="header-main-nav">
+                <div class="container">
+                    <div class="col-auto left secondary">
+                        <ul class="list list-justified" id="BitCommonNav_List">
+                            <li><a href="http://car.bitauto.com/">车型</a></li>
+                            <li><a href="http://photo.bitauto.com/">图片</a></li>
+                            <li id="BitCommonNav_video"><a href="http://v.bitauto.com/">视频</a></li>
+                            <li><a href="http://www.bitauto.com/huati/">话题</a></li>
+                            <li><a href="http://www.bitauto.com/pingce/">评测</a></li>
+                            <li><a href="http://www.bitauto.com/daogou/">导购</a></li>
+                            <li><a href="http://price.bitauto.com/">报价</a></li>
+                            <li><a href="http://jiangjia.bitauto.com/">降价</a></li>
+                            <li><a href="http://dealer.bitauto.com/beijing/">经销商</a></li>
+                            <li><a href="http://ask.bitauto.com/">问答</a></li>
+                            <li><a href="http://koubei.bitauto.com/">口碑</a></li>
+                            <li><a href="http://yanghu.bitauto.com/?source=1">养护</a></li>
+                            <li><a target="_blank" href="http://www.taoche.com/">二手车</a></li>
+                            <li><a href="http://baa.bitauto.com/">论坛</a></li>
+                            <li><a target="_blank" href="http://yiqishuo.yiche.com/">易起说</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <script type="text/javascript">
+    var BitNav_current_url = window.location.href;
+    var BitNav_List_len = document.getElementById("BitCommonNav_List").getElementsByTagName("li").length;
+    for (var i = 0; i < BitNav_List_len; i++) {
+        var BitNav_current_li = document.getElementById("BitCommonNav_List").getElementsByTagName("li")[i];
+        var BitNav_url = BitNav_current_li.getElementsByTagName("a")[0].getAttribute("href");
+		var reg = new RegExp(BitNav_url);
+		if (reg.test(BitNav_current_url)) {
+            BitNav_current_li.className = "active";
+        }
+    }
+        </script>
+    </header>
+
+    <!-- 首页焦点图 -->
+    ﻿<div class="container">
+        <div class="slide-container-box">
+            <div class="slide-box slide-1200" id="slide-baa">
+                <div class="slide-box-bg">
+                    <ul class="slide-box-big">
+                        <li>
+                            <div class="slide-list-box clearfix">
+                                <div class="col1-row2-480x480mix">
+                                    <div class="figure-box w480-h320">
+                                        <a target="_blank" href="http://baa.bitauto.com/rongweirx5/thread-9764304.html" class="figure">
+                                            <img src="http://temp.im/480x320" alt="">
+                                        </a>
+                                        <div class="title-box">
+                                            <h4 class="title">
+                                                <a target="_blank" href="http://baa.bitauto.com/rongweirx5/thread-9764304.html">百兽之王突破陈规 深度试驾荣威RX5</a>
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    <div class="figure-box w480-h158">
+                                        <div class="title-box">
+                                            <h3 class="title">
+                                                <a target="_blank" href="http://baa.bitauto.com/aodiq5/thread-9612697.html">#提车作业#新提奥迪Q5</a>
+                                            </h3>
+                                            <p>
+                                                #提车作业#和家里兄弟做了点小小的事业，老是出去办事出差，家里的车子就不够用了，思来想去，还是买一个能办事，能日常代步…
+                                            </p>
+                                        </div>
+                                        <a target="_blank" href="http://baa.bitauto.com/aodiq5/thread-9612697.html" class="figure"></a>
+                                    </div>
+                                </div>
+                                <div class="col2-row2-358x239">
+                                    <div class="list-box clearfix">
+                                        <div class="figure-box w358-h239">
+                                            <a target="_blank" href="http://baa.bitauto.com/lady/thread-9768311.html" class="figure">
+                                                <img src="http://temp.im/358x239" alt="">
+                                            </a>
+                                            <div class="title-box">
+                                                <h6 class="title">
+                                                    <a target="_blank" href="http://baa.bitauto.com/lady/thread-9768311.html">长腿宝贝的绿茵情结</a>
+                                                </h6>
+                                            </div>
+                                        </div>
+                                        <div class="figure-box w358-h239">
+                                            <a target="_blank" href="http://baa.bitauto.com/qcmx/thread-9760385.html" class="figure">
+                                                <img src="http://temp.im/358x239" alt="">
+                                            </a>
+                                            <div class="title-box">
+                                                <h6 class="title">
+                                                    <a target="_blank" href="http://baa.bitauto.com/qcmx/thread-9760385.html">终极大杀器 Porsche 917</a>
+                                                </h6>
+                                            </div>
+                                        </div>
+                                        <div class="figure-box w358-h239">
+                                            <a target="_blank" href="http://baa.bitauto.com/baapm/thread-9710422.html" class="figure">
+                                                <img src="http://temp.im/358x239" alt="">
+                                            </a>
+                                            <div class="title-box">
+                                                <h6 class="title">
+                                                    <a target="_blank" href="http://baa.bitauto.com/baapm/thread-9710422.html">分享购车价格 赢取丰厚车币</a>
+                                                </h6>
+                                            </div>
+                                        </div>
+                                        <div class="figure-box w358-h239">
+                                            <a target="_blank" href="http://koubei.bitauto.com/subject/s1.html" class="figure">
+                                                <img src="http://temp.im/358x239" alt="">
+                                            </a>
+                                            <div class="title-box">
+                                                <h6 class="title">
+                                                    <a target="_blank" href="http://koubei.bitauto.com/subject/s1.html">分享用车感受 送小米移动电源</a>
+                                                </h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="slide-list-box clearfix">
+                                <div class="col1-row2-480x480mix">
+                                    <div class="figure-box w480-h320">
+                                        <a target="_blank" href="http://baa.bitauto.com/h6/thread-9758812.html" class="figure">
+                                            <img src="http://temp.im/480x320" alt="">
+                                        </a>
+                                        <div class="title-box">
+                                            <h4 class="title">
+                                                <a target="_blank" href="http://baa.bitauto.com/h6/thread-9758812.html">一见钟情 外观控喜提哈弗H6</a>
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    <div class="figure-box w480-h158">
+                                        <div class="title-box">
+                                            <h3 class="title">
+                                                <a target="_blank" href="http://baa.bitauto.com/aodia4/thread-9103102.html">两年多了，晒晒咱家A4L</a>
+                                            </h3>
+                                            <p>
+                                                刚开始本来是冲着帕萨特和雅阁去的，因为这两个主流的B级车无论是外观还是内饰，再到车内空间再到动力也都还可以，尤其雅阁的车内空间非常大…
+                                            </p>
+                                        </div>
+                                        <a target="_blank" href="http://baa.bitauto.com/aodia4/thread-9103102.html" class="figure"></a>
+                                    </div>
+                                </div>
+                                <div class="col2-row2-358x239">
+                                    <div class="list-box clearfix">
+                                        <!--focus ad start-->
+                                        <div class="figure-box w358-h239">
+                                            <ins id="div_85982be8-807e-4c07-a1bb-168ef7b27267" data-type="ad_play" data-adplay_IP="" data-adplay_AreaName="" data-adplay_CityName="" data-adplay_BrandID="" data-adplay_BrandName="" data-adplay_BrandType="" data-adplay_BlockCode="85982be8-807e-4c07-a1bb-168ef7b27267"> </ins>
+                                        </div>
+                                        <div class="figure-box w358-h239">
+                                            <ins id="div_45af7588-0d79-4edf-8388-7fa52f85bb80" data-type="ad_play" data-adplay_IP="" data-adplay_AreaName="" data-adplay_CityName="" data-adplay_BrandID="" data-adplay_BrandName="" data-adplay_BrandType="" data-adplay_BlockCode="45af7588-0d79-4edf-8388-7fa52f85bb80"> </ins>
+                                        </div>
+                                        <div class="figure-box w358-h239">
+                                            <ins id="div_699895bc-0c92-407f-b1e5-5b2811eb4aad" data-type="ad_play" data-adplay_IP="" data-adplay_AreaName="" data-adplay_CityName="" data-adplay_BrandID="" data-adplay_BrandName="" data-adplay_BrandType="" data-adplay_BlockCode="699895bc-0c92-407f-b1e5-5b2811eb4aad"> </ins>
+                                        </div>
+                                        <div class="figure-box w358-h239">
+                                            <ins id="div_e4398407-2d4f-4dd8-bc79-b0d33e521bcc" data-type="ad_play" data-adplay_IP="" data-adplay_AreaName="" data-adplay_CityName="" data-adplay_BrandID="" data-adplay_BrandName="" data-adplay_BrandType="" data-adplay_BlockCode="e4398407-2d4f-4dd8-bc79-b0d33e521bcc"> </ins>
+                                        </div>
+                                        <!--focus ad end-->
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--焦点图文and登录-->
+    <div class="container margin-top-30 h-focus-login">
+        <div class="col-xs-9 section-left">
+            ﻿<!--左侧三张图片-->
+            <div class="baa-index-focus-imglist">
+                <div class="img-layout img-layout-mask img-layout-360240">
+                    <a target="_blank" href="http://baa.bitauto.com/lingdong/thread-9765964.html">
+                        <div class="img">
+                            <img alt="" src="http://image.bitautoimg.com/bitauto/focuspic/2016/4/20164297287502.jpg">
+                        </div>
+                        <div class="txt">
+                            <p>例1：轿车撞护栏殃及宝马</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="img-layout img-layout-mask img-layout-360240">
+                    <a target="_blank" href="http://baa.bitauto.com/lingdong/thread-9765964.html">
+                        <div class="img">
+                            <img alt="" src="http://image.bitautoimg.com/bitauto/focuspic/2016/4/20164297287502.jpg">
+                        </div>
+                        <div class="txt">
+                            <p>例2：轿车撞护栏殃及宝马</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="img-layout img-layout-mask img-layout-360240">
+                    <a target="_blank" href="http://baa.bitauto.com/lingdong/thread-9765964.html">
+                        <div class="img">
+                            <img alt="" src="http://image.bitautoimg.com/bitauto/focuspic/2016/4/20164297287502.jpg">
+                        </div>
+                        <div class="txt">
+                            <p>例3：轿车撞护栏殃及宝马</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="baa-index-focus-textlist">
+                ﻿
+                <div class="section-putcar">
+                    <h3><span>提车：</span>抓住优惠的尾巴 购入实力超群比亚迪唐</h3>
+                    <ul class="textlist">
+                        <li><a href="http://baa.bitauto.com/jiliboyue/" target="_blank" class="em">博越论坛</a><a href="http://baa.bitauto.com/jiliboyue/thread-9676434.html" target="_blank">80后车主圆梦之选 博越智尊提车记</a></li>
+                        <li><a href="http://baa.bitauto.com/sagitar/" target="_blank" class="em">速腾论坛</a><a href="http://baa.bitauto.com/sagitar/thread-9681591.html" target="_blank">保有量大省油空间出色 购速腾兑诺言</a></li>
+                        <li><a href="http://baa.bitauto.com/ruicheng/" target="_blank" class="em">睿骋论坛</a><a href="http://baa.bitauto.com/ruicheng/thread-9672671.html" target="_blank">追求动力 不顾阻拦任性买下长安睿骋</a></li>
+                    </ul>
+                </div>
+
+                ﻿
+                <div class="section-usecar">
+                    <h3><span>用车：</span>抓住优惠的尾巴 购入实力超群比亚迪唐</h3>
+                    <ul class="textlist">
+                        <li><a href="http://baa.bitauto.com/jiliboyue/" target="_blank" class="em">博越论坛</a><a href="http://baa.bitauto.com/jiliboyue/thread-9676434.html" target="_blank">80后车主圆梦之选 博越智尊提车记</a></li>
+                        <li><a href="http://baa.bitauto.com/sagitar/" target="_blank" class="em">速腾论坛</a><a href="http://baa.bitauto.com/sagitar/thread-9681591.html" target="_blank">保有量大省油空间出色 购速腾兑诺言</a></li>
+                        <li><a href="http://baa.bitauto.com/ruicheng/" target="_blank" class="em">睿骋论坛</a><a href="http://baa.bitauto.com/ruicheng/thread-9672671.html" target="_blank">追求动力 不顾阻拦任性买下长安睿骋</a></li>
+                    </ul>
+                </div>
+
+                ﻿
+                <div class="section-curing">
+                    <h3><span>养护：</span>抓住优惠的尾巴 购入实力超群比亚迪唐</h3>
+                    <ul class="textlist">
+                        <li><a href="http://baa.bitauto.com/jiliboyue/" target="_blank" class="em">博越论坛</a><a href="http://baa.bitauto.com/jiliboyue/thread-9676434.html" target="_blank">80后车主圆梦之选 博越智尊提车记</a></li>
+                        <li><a href="http://baa.bitauto.com/sagitar/" target="_blank" class="em">速腾论坛</a><a href="http://baa.bitauto.com/sagitar/thread-9681591.html" target="_blank">保有量大省油空间出色 购速腾兑诺言</a></li>
+                        <li><a href="http://baa.bitauto.com/ruicheng/" target="_blank" class="em">睿骋论坛</a><a href="http://baa.bitauto.com/ruicheng/thread-9672671.html" target="_blank">追求动力 不顾阻拦任性买下长安睿骋</a></li>
+                    </ul>
+                </div>
+
+                ﻿
+                <div class="section-praise">
+                    <h3><span>口碑：</span>抓住优惠的尾巴 购入实力超群比亚迪唐</h3>
+                    <ul class="textlist">
+                        <li><a href="http://baa.bitauto.com/jiliboyue/" target="_blank" class="em">博越论坛</a><a href="http://baa.bitauto.com/jiliboyue/thread-9676434.html" target="_blank">80后车主圆梦之选 博越智尊提车记</a></li>
+                        <li><a href="http://baa.bitauto.com/sagitar/" target="_blank" class="em">速腾论坛</a><a href="http://baa.bitauto.com/sagitar/thread-9681591.html" target="_blank">保有量大省油空间出色 购速腾兑诺言</a></li>
+                        <li><a href="http://baa.bitauto.com/ruicheng/" target="_blank" class="em">睿骋论坛</a><a href="http://baa.bitauto.com/ruicheng/thread-9672671.html" target="_blank">追求动力 不顾阻拦任性买下长安睿骋</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-xs-3 section-right">
+            <div class="baa-nonstop">
+                <h3>论坛直达</h3>
+                <form action="">
+                    <div class="form-group">
+                        <div id="master" class="brand-form  no-second">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div id="serial" class="brand-form  no-second">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <a id="gotoForum" class="btn btn-secondary btn-block" href="#">论坛直达</a>
+                    </div>
+                </form>
+                <div class="more">
+                    <a href="/foruminterrelated/brandforumlist.html" target="_blank">论坛大全&gt;&gt;</a>
+                </div>
+            </div>
+            <div class="baa-login" id="loginDiv">
+            </div>
+        </div>
+    </div>
+
+    <!--一周易精彩-->
+    <div class="container margin-top-30">
+        <div class="section-header header1">
+            <div class="box">
+                <h2><a href="http://baa.bitauto.com/bao" target="_blank">一周易精彩</a></h2>
+            </div>
+            <div class="more"><a href="http://baa.bitauto.com/bao" target="_blank">更多&gt;&gt;</a></div>
+        </div>
+        ﻿<div class="row block-5col-216">
+            <div class="col-5col">
+                <div class="img-info-layout-vertical img-info-layout-vertical-216310">
+                    <div class="img">
+                        <a target="_blank" href="http://baa.bitauto.com/bao/#132"><img src="http://img1.baa.bitautotech.com/usergroup/2016/9/27/9aaa140bf9f04bfbbda362b164a8c9fe_source.jpg" alt="" /></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5col">
+                <div class="img-info-layout-vertical img-info-layout-vertical-216310">
+                    <div class="img">
+                        <a target="_blank" href="http://baa.bitauto.com/bao/#131">
+                            <img src="http://img1.baa.bitautotech.com/usergroup/2016/9/27/9aaa140bf9f04bfbbda362b164a8c9fe_source.jpg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5col">
+                <div class="img-info-layout-vertical img-info-layout-vertical-216310">
+                    <div class="img">
+                        <a target="_blank" href="http://baa.bitauto.com/bao/#130">
+                            <img src="http://img1.baa.bitautotech.com/usergroup/2016/9/27/9aaa140bf9f04bfbbda362b164a8c9fe_source.jpg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5col">
+                <div class="img-info-layout-vertical img-info-layout-vertical-216310">
+                    <div class="img">
+                        <a target="_blank" href="http://baa.bitauto.com/bao/#129">
+                            <img src="http://img1.baa.bitautotech.com/usergroup/2016/9/27/9aaa140bf9f04bfbbda362b164a8c9fe_source.jpg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5col">
+                <div class="img-info-layout-vertical img-info-layout-vertical-216310">
+                    <div class="img">
+                        <a target="_blank" href="http://baa.bitauto.com/bao/#128">
+                            <img src="http://img1.baa.bitautotech.com/usergroup/2016/9/27/9aaa140bf9f04bfbbda362b164a8c9fe_source.jpg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--通栏广告01start-->
+    <div class="container  margin-top-30">
+        <ins id="div_8eb4a758-9096-426b-85fa-498366a8ae17" type="ad_play" adplay_ip="" adplay_areaname=""
+             adplay_cityname="" adplay_brandid="" adplay_brandname="" adplay_brandtype=""
+             adplay_blockcode="8eb4a758-9096-426b-85fa-498366a8ae17"></ins>
+    </div>
+    <!--通栏广告01end-->
+    <!--自驾游-->
+    <div class="container  margin-top-30 section-left-line h-self-driving">
+        ﻿ <div class="section-header header1">
+            <div class="box">
+                <h2><a target="_blank" href="http://zijia.bitauto.com/">自驾游</a></h2>
+            </div>
+            <div class="more">
+                <div class="advert" style="display: inline;">
+                    <ins id="div_24b15035-9d9e-4271-afe4-f9b0b06532a0" type="ad_play" adplay_IP="" adplay_AreaName="" adplay_CityName="" adplay_BrandID="" adplay_BrandName="" adplay_BrandType="" adplay_BlockCode="24b15035-9d9e-4271-afe4-f9b0b06532a0"> </ins>
+                </div>
+                <a target="_blank" href="http://baa.bitauto.com/drive/">自驾游论坛</a>
+                <a target="_blank" href="http://zijia.leche.com/place/">目的地</a>
+                <a target="_blank" href="http://zijia.bitauto.com/youji/">游记</a>
+            </div>
+        </div>
+        ﻿<div class="col-xs-9 section-left">
+            <div class="row block-3col-240">
+                <div class="col-xs-4">
+                    <div class="img-info-layout-vertical img-info-layout-baa img-info-layout-vertical-240160">
+                        <div class="img">
+                            <a target="_blank" href="http://baa.bitauto.com/drive/youji-9755239.html#yicheAnchor"><img src="http://pic.baa.bitautotech.com/usergroup/2016/9/27/0b9ecfc6aa98484f9ca1a7db4792c075_source.jpg"></a>
+                        </div>
+                        <ul class="p-list">
+                            <li class="name"><a target="_blank" href="http://baa.bitauto.com/drive/youji-9755239.html#yicheAnchor">游八朝古都 河南开封</a></li>
+                            <li class="num">
+                                <p><span><a target="_blank" href="http://i.yiche.com/u10046488/">这草没毒</a></span><span>2016-12-31</span></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="img-info-layout-vertical img-info-layout-baa img-info-layout-vertical-240160">
+                        <div class="img">
+                            <a target="_blank" href="http://baa.bitauto.com/drive/youji-9755239.html#yicheAnchor"><img src="http://pic.baa.bitautotech.com/usergroup/2016/9/27/0b9ecfc6aa98484f9ca1a7db4792c075_source.jpg"></a>
+                        </div>
+                        <ul class="p-list">
+                            <li class="name"><a target="_blank" href="http://baa.bitauto.com/drive/youji-9755239.html#yicheAnchor">游八朝古都 河南开封</a></li>
+                            <li class="num">
+                                <p><span><a target="_blank" href="http://i.yiche.com/u10046488/">这草没毒</a></span><span>2016-12-31</span></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="img-info-layout-vertical img-info-layout-baa img-info-layout-vertical-240160">
+                        <div class="img">
+                            <a target="_blank" href="http://baa.bitauto.com/drive/youji-9755239.html#yicheAnchor"><img src="http://pic.baa.bitautotech.com/usergroup/2016/9/27/0b9ecfc6aa98484f9ca1a7db4792c075_source.jpg"></a>
+                        </div>
+                        <ul class="p-list">
+                            <li class="name"><a target="_blank" href="http://baa.bitauto.com/drive/youji-9755239.html#yicheAnchor">游八朝古都 河南开封</a></li>
+                            <li class="num">
+                                <p><span><a target="_blank" href="http://i.yiche.com/u10046488/">这草没毒</a></span><span>2016-12-31</span></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="img-info-layout-vertical img-info-layout-baa img-info-layout-vertical-240160">
+                        <div class="img">
+                            <a target="_blank" href="http://baa.bitauto.com/drive/youji-9755239.html#yicheAnchor"><img src="http://pic.baa.bitautotech.com/usergroup/2016/9/27/0b9ecfc6aa98484f9ca1a7db4792c075_source.jpg"></a>
+                        </div>
+                        <ul class="p-list">
+                            <li class="name"><a target="_blank" href="http://baa.bitauto.com/drive/youji-9755239.html#yicheAnchor">游八朝古都 河南开封</a></li>
+                            <li class="num">
+                                <p><span><a target="_blank" href="http://i.yiche.com/u10046488/">这草没毒</a></span><span>2016-12-31</span></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="img-info-layout-vertical img-info-layout-baa img-info-layout-vertical-240160">
+                        <div class="img">
+                            <a target="_blank" href="http://baa.bitauto.com/drive/youji-9755239.html#yicheAnchor"><img src="http://pic.baa.bitautotech.com/usergroup/2016/9/27/0b9ecfc6aa98484f9ca1a7db4792c075_source.jpg"></a>
+                        </div>
+                        <ul class="p-list">
+                            <li class="name"><a target="_blank" href="http://baa.bitauto.com/drive/youji-9755239.html#yicheAnchor">游八朝古都 河南开封</a></li>
+                            <li class="num">
+                                <p><span><a target="_blank" href="http://i.yiche.com/u10046488/">这草没毒</a></span><span>2016-12-31</span></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="img-info-layout-vertical img-info-layout-baa img-info-layout-vertical-240160">
+                        <div class="img">
+                            <a target="_blank" href="http://baa.bitauto.com/drive/youji-9755239.html#yicheAnchor"><img src="http://pic.baa.bitautotech.com/usergroup/2016/9/27/0b9ecfc6aa98484f9ca1a7db4792c075_source.jpg"></a>
+                        </div>
+                        <ul class="p-list">
+                            <li class="name"><a target="_blank" href="http://baa.bitauto.com/drive/youji-9755239.html#yicheAnchor">游八朝古都 河南开封</a></li>
+                            <li class="num">
+                                <p><span><a target="_blank" href="http://i.yiche.com/u10046488/">这草没毒</a></span><span>2016-12-31</span></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-3 section-right">
+            ﻿<div class="layout-1">
+                <div class="section-header header3">
+                    <div class="box">
+                        <h2>
+                            <a target="_blank" href="http://jiangjia.bitauto.com/">主题游</a>
+                        </h2>
+                    </div>
+                </div>
+                <div class="tag tag-default2">
+                    <a href="http://zijia.leche.com/place/list-201-0-3-1.html" title="公园">公园</a>
+                    <a href="http://zijia.leche.com/place/list-201-0-5-1.html" title="海边">海边</a>
+                    <a href="http://zijia.leche.com/place/list-201-0-9-1.html" title="山峰峡谷">山峰峡谷</a>
+                    <a href="http://zijia.leche.com/place/list-201-0-10-1.html" title="温泉">温泉</a>
+                    <a href="http://zijia.leche.com/place/list-201-0-12-1.html" title="乡村">乡村</a>
+                    <a href="http://zijia.leche.com/place/list-201-0-2-1.html" title="城市">城市</a>
+                    <a href="http://zijia.leche.com/place/list-201-1-0-1.html" title="1天往返">1天往返</a>
+                    <a href="http://zijia.leche.com/place/list-201-2-0-1.html" title="2-3天周末游">2-3天周末游</a>
+                </div>
+            </div>
+            <div class="layout-1">
+                <div class="section-header header3">
+                    <div class="box">
+                        <h2>自驾游排行</h2>
+                    </div>
+                </div>
+                <div class="list-txt list-txt-m list-txt-style-num">
+                    <ul>
+                        ﻿
+                        <li><a href="http://baa.bitauto.com/drive/thread-8127992.html" target="_blank" title="沙漠海洋草原 我和媳妇的周末自驾">沙漠海洋草原 我和媳妇的周末自驾</a></li>
+                        <li><a href="http://baa.bitauto.com/benchicji-2364/thread-8173766.html" target="_blank" title="【MBC】北京—— 海龟的草原天路之旅（图多，慎点）">【MBC】北京—— 海龟的草原天路之旅（图多，慎点）</a></li>
+                        <li><a href="http://baa.bitauto.com/js/thread-8177792.html" target="_blank" title="【国庆小长假精品游记】国庆小长假和儿子畅游天目湖">【国庆小长假精品游记】国庆小长假和儿子畅游天目湖</a></li>
+                        <li><a href="http://baa.bitauto.com/bora/thread-8182583.html" target="_blank" title="【宝来伴我同行】家的味道">【宝来伴我同行】家的味道</a></li>
+                        <li><a href="http://baa.bitauto.com/u6suv/thread-8180495.html" target="_blank" title="带着“小6带着游廿八都古镇记">带着“小6带着游廿八都古镇记</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--玩摄影-->
+    <div class="container  margin-top-30 section-left-line h-shoot">
+        ﻿<div class="section-header header1">
+            <div class="box">
+                <h2><a target="_blank" href="http://baa.bitauto.com/photo/"></a>玩摄影</h2>
+            </div>
+            <div class="more">
+                <a target="_blank" href="http://baa.bitauto.com/photo/">摄影论坛</a>
+                <a target="_blank" href="http://baa.bitauto.com/photo/index-19-all-1-0.html">自然风光</a>
+                <a target="_blank" href="http://baa.bitauto.com/photo/index-20-all-1-0.html">人像摄影</a>
+                <a target="_blank" href="http://baa.bitauto.com/photo/index-21-all-1-0.html">人文纪实</a>
+                <a target="_blank" href="http://baa.bitauto.com/photo/index-22-all-1-0.html">汽车光影</a>
+            </div>
+        </div>
+
+        ﻿<div class="col-xs-9 section-left">
+            <div class="row block-3col-240">
+                <div class="col-xs-4">
+                    <div class="img-info-layout-vertical img-info-layout-baa img-info-layout-vertical-240160">
+                        <div class="img">
+                            <a href="http://baa.bitauto.com/photo/thread-9774257.html" target="_blank">
+                                <img src="http://pic.baa.bitautotech.com/usergroup/2016/9/27/0b9ecfc6aa98484f9ca1a7db4792c075_source.jpg">
+                            </a>
+                        </div>
+                        <ul class="p-list">
+                            <li class="name">
+                                <a href="http://baa.bitauto.com/photo/thread-9774257.html" target="_blank">
+                                    续写影像新传奇 佳能5D4
+                                </a>
+                            </li>
+                            <li class="num">
+                                <p>
+                                    <span><a target="_blank" href="http://i.yiche.com/u3894739/">玩摄堂</a></span><span>2016-12-31</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="img-info-layout-vertical img-info-layout-baa img-info-layout-vertical-240160">
+                        <div class="img">
+                            <a href="http://baa.bitauto.com/photo/thread-9774257.html" target="_blank">
+                                <img src="http://pic.baa.bitautotech.com/usergroup/2016/9/27/0b9ecfc6aa98484f9ca1a7db4792c075_source.jpg">
+                            </a>
+                        </div>
+                        <ul class="p-list">
+                            <li class="name">
+                                <a href="http://baa.bitauto.com/photo/thread-9774257.html" target="_blank">
+                                    续写影像新传奇 佳能5D4
+                                </a>
+                            </li>
+                            <li class="num">
+                                <p>
+                                    <span><a target="_blank" href="http://i.yiche.com/u3894739/">玩摄堂</a></span><span>2016-12-31</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="img-info-layout-vertical img-info-layout-baa img-info-layout-vertical-240160">
+                        <div class="img">
+                            <a href="http://baa.bitauto.com/photo/thread-9774257.html" target="_blank">
+                                <img src="http://pic.baa.bitautotech.com/usergroup/2016/9/27/0b9ecfc6aa98484f9ca1a7db4792c075_source.jpg">
+                            </a>
+                        </div>
+                        <ul class="p-list">
+                            <li class="name">
+                                <a href="http://baa.bitauto.com/photo/thread-9774257.html" target="_blank">
+                                    续写影像新传奇 佳能5D4
+                                </a>
+                            </li>
+                            <li class="num">
+                                <p>
+                                    <span><a target="_blank" href="http://i.yiche.com/u3894739/">玩摄堂</a></span><span>2016-12-31</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="img-info-layout-vertical img-info-layout-baa img-info-layout-vertical-240160">
+                        <div class="img">
+                            <a href="http://baa.bitauto.com/photo/thread-9774257.html" target="_blank">
+                                <img src="http://pic.baa.bitautotech.com/usergroup/2016/9/27/0b9ecfc6aa98484f9ca1a7db4792c075_source.jpg">
+                            </a>
+                        </div>
+                        <ul class="p-list">
+                            <li class="name">
+                                <a href="http://baa.bitauto.com/photo/thread-9774257.html" target="_blank">
+                                    续写影像新传奇 佳能5D4
+                                </a>
+                            </li>
+                            <li class="num">
+                                <p>
+                                    <span><a target="_blank" href="http://i.yiche.com/u3894739/">玩摄堂</a></span><span>2016-12-31</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="img-info-layout-vertical img-info-layout-baa img-info-layout-vertical-240160">
+                        <div class="img">
+                            <a href="http://baa.bitauto.com/photo/thread-9774257.html" target="_blank">
+                                <img src="http://pic.baa.bitautotech.com/usergroup/2016/9/27/0b9ecfc6aa98484f9ca1a7db4792c075_source.jpg">
+                            </a>
+                        </div>
+                        <ul class="p-list">
+                            <li class="name">
+                                <a href="http://baa.bitauto.com/photo/thread-9774257.html" target="_blank">
+                                    续写影像新传奇 佳能5D4
+                                </a>
+                            </li>
+                            <li class="num">
+                                <p>
+                                    <span><a target="_blank" href="http://i.yiche.com/u3894739/">玩摄堂</a></span><span>2016-12-31</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="img-info-layout-vertical img-info-layout-baa img-info-layout-vertical-240160">
+                        <div class="img">
+                            <a href="http://baa.bitauto.com/photo/thread-9774257.html" target="_blank">
+                                <img src="http://pic.baa.bitautotech.com/usergroup/2016/9/27/0b9ecfc6aa98484f9ca1a7db4792c075_source.jpg">
+                            </a>
+                        </div>
+                        <ul class="p-list">
+                            <li class="name">
+                                <a href="http://baa.bitauto.com/photo/thread-9774257.html" target="_blank">
+                                    续写影像新传奇 佳能5D4
+                                </a>
+                            </li>
+                            <li class="num">
+                                <p>
+                                    <span><a target="_blank" href="http://i.yiche.com/u3894739/">玩摄堂</a></span><span>2016-12-31</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-3 section-right">
+            <div class="layout-1">
+                <div class="section-header header3">
+                    <div class="box">
+                        <h2>摄影排行</h2>
+                    </div>
+                </div>
+                <div class="list-txt list-txt-m list-txt-style-num">
+                    <ul>
+                        ﻿
+                        <li><a href="http://baa.bitauto.com/photo/thread-8125820.html" target="_blank" title="2015上海CAS改装车展">2015上海CAS改装车展</a></li>
+                        <li><a href="http://baa.bitauto.com/photo/thread-8114726.html" target="_blank" title="大美安徽泾县桃花潭">大美安徽泾县桃花潭</a></li>
+                        <li><a href="http://baa.bitauto.com/photo/thread-8097230.html" target="_blank" title="大理洱海光韵">大理洱海光韵</a></li>
+                        <li><a href="http://baa.bitauto.com/photo/thread-8118138.html" target="_blank" title="去看那神奇的布达拉">去看那神奇的布达拉</a></li>
+                        <li><a href="http://baa.bitauto.com/photo/thread-8099891.html" target="_blank" title="洱海晨韵">洱海晨韵</a></li>
+                        <li><a href="http://baa.bitauto.com/photo/thread-8182501.html" target="_blank" title="夕阳下的美丽奇观">夕阳下的美丽奇观</a></li>
+                        <li><a href="http://baa.bitauto.com/photo/thread-8123894.html" target="_blank" title="颐和园的绣漪桥">颐和园的绣漪桥</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="layout-add">
+                <ins id="div_2d198b2d-8ce2-40ec-816c-cfcec9007d7b" type="ad_play" adplay_ip="" adplay_areaname=""
+                     adplay_cityname="" adplay_brandid="" adplay_brandname="" adplay_brandtype=""
+                     adplay_blockcode="2d198b2d-8ce2-40ec-816c-cfcec9007d7b"></ins>
+            </div>
+        </div>
+    </div>
+
+    <!--赏模型-->
+    <div class="container  margin-top-30 section-left-line h-model">
+        ﻿<div class="section-header header1">
+            <div class="box">
+                <h2><a target="_blank" href="http://baa.bitauto.com/l-zhuti/index-5-1.html">赏模型</a></h2>
+            </div>
+            <div class="more">
+                <a target="_blank" href="http://baa.bitauto.com/qcmx/">模型论坛</a>
+                <a target="_blank" href="http://baa.bitauto.com/qcmx/index-37-all-1-0.html">成品模型</a>
+                <a target="_blank" href="http://baa.bitauto.com/qcmx/index-35-all-1-0.html">拼装模型</a>
+                <a target="_blank" href="http://baa.bitauto.com/qcmx/index-60-all-1-0.html">动态模型</a>
+                <a target="_blank" href="http://baa.bitauto.com/qcmx/index-34-all-1-0.html">模型外拍</a>
+                <a target="_blank" href="http://baa.bitauto.com/qcmx/index-36-all-1-0.html">车模情景剧</a>
+                <a target="_blank" href="http://baa.bitauto.com/qcmx/index-40-all-1-0.html">经典名车</a>
+            </div>
+        </div>
+
+        ﻿<div class="col-xs-9 section-left">
+            <div class="row block-3col-240">
+                <div class="col-xs-4">
+                    <div class="img-info-layout-vertical img-info-layout-baa img-info-layout-vertical-240160">
+                        <div class="img">
+                            <a target="_blank" href="http://baa.bitauto.com/qcmx/thread-9753691.html">
+                                <img src="http://pic.baa.bitautotech.com/usergroup/2016/9/27/0b9ecfc6aa98484f9ca1a7db4792c075_source.jpg">
+                            </a>
+                        </div>
+                        <ul class="p-list">
+                            <li class="name">
+                                <a target="_blank" href="http://baa.bitauto.com/qcmx/thread-9753691.html">
+                                    赤城白彗星 RX7 FC3S
+                                </a>
+                            </li>
+                            <li class="num">
+                                <p>
+                                    <span><a target="_blank" href="http://i.yiche.com/u8219281/">想飞的臭兔子</a></span><span>2016-12-31</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="img-info-layout-vertical img-info-layout-baa img-info-layout-vertical-240160">
+                        <div class="img">
+                            <a target="_blank" href="http://baa.bitauto.com/qcmx/thread-9753691.html">
+                                <img src="http://pic.baa.bitautotech.com/usergroup/2016/9/27/0b9ecfc6aa98484f9ca1a7db4792c075_source.jpg">
+                            </a>
+                        </div>
+                        <ul class="p-list">
+                            <li class="name">
+                                <a target="_blank" href="http://baa.bitauto.com/qcmx/thread-9753691.html">
+                                    赤城白彗星 RX7 FC3S
+                                </a>
+                            </li>
+                            <li class="num">
+                                <p>
+                                    <span><a target="_blank" href="http://i.yiche.com/u8219281/">想飞的臭兔子</a></span><span>2016-12-31</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="img-info-layout-vertical img-info-layout-baa img-info-layout-vertical-240160">
+                        <div class="img">
+                            <a target="_blank" href="http://baa.bitauto.com/qcmx/thread-9753691.html">
+                                <img src="http://pic.baa.bitautotech.com/usergroup/2016/9/27/0b9ecfc6aa98484f9ca1a7db4792c075_source.jpg">
+                            </a>
+                        </div>
+                        <ul class="p-list">
+                            <li class="name">
+                                <a target="_blank" href="http://baa.bitauto.com/qcmx/thread-9753691.html">
+                                    赤城白彗星 RX7 FC3S
+                                </a>
+                            </li>
+                            <li class="num">
+                                <p>
+                                    <span><a target="_blank" href="http://i.yiche.com/u8219281/">想飞的臭兔子</a></span><span>2016-12-31</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="img-info-layout-vertical img-info-layout-baa img-info-layout-vertical-240160">
+                        <div class="img">
+                            <a target="_blank" href="http://baa.bitauto.com/qcmx/thread-9753691.html">
+                                <img src="http://pic.baa.bitautotech.com/usergroup/2016/9/27/0b9ecfc6aa98484f9ca1a7db4792c075_source.jpg">
+                            </a>
+                        </div>
+                        <ul class="p-list">
+                            <li class="name">
+                                <a target="_blank" href="http://baa.bitauto.com/qcmx/thread-9753691.html">
+                                    赤城白彗星 RX7 FC3S
+                                </a>
+                            </li>
+                            <li class="num">
+                                <p>
+                                    <span><a target="_blank" href="http://i.yiche.com/u8219281/">想飞的臭兔子</a></span><span>2016-12-31</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="img-info-layout-vertical img-info-layout-baa img-info-layout-vertical-240160">
+                        <div class="img">
+                            <a target="_blank" href="http://baa.bitauto.com/qcmx/thread-9753691.html">
+                                <img src="http://pic.baa.bitautotech.com/usergroup/2016/9/27/0b9ecfc6aa98484f9ca1a7db4792c075_source.jpg">
+                            </a>
+                        </div>
+                        <ul class="p-list">
+                            <li class="name">
+                                <a target="_blank" href="http://baa.bitauto.com/qcmx/thread-9753691.html">
+                                    赤城白彗星 RX7 FC3S
+                                </a>
+                            </li>
+                            <li class="num">
+                                <p>
+                                    <span><a target="_blank" href="http://i.yiche.com/u8219281/">想飞的臭兔子</a></span><span>2016-12-31</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="img-info-layout-vertical img-info-layout-baa img-info-layout-vertical-240160">
+                        <div class="img">
+                            <a target="_blank" href="http://baa.bitauto.com/qcmx/thread-9753691.html">
+                                <img src="http://pic.baa.bitautotech.com/usergroup/2016/9/27/0b9ecfc6aa98484f9ca1a7db4792c075_source.jpg">
+                            </a>
+                        </div>
+                        <ul class="p-list">
+                            <li class="name">
+                                <a target="_blank" href="http://baa.bitauto.com/qcmx/thread-9753691.html">
+                                    赤城白彗星 RX7 FC3S
+                                </a>
+                            </li>
+                            <li class="num">
+                                <p>
+                                    <span><a target="_blank" href="http://i.yiche.com/u8219281/">想飞的臭兔子</a></span><span>2016-12-31</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-3 section-right">
+            <div class="layout-1">
+                <div class="section-header header3">
+                    <div class="box">
+                        <h2>模型排行</h2>
+                    </div>
+                </div>
+                <div class="list-txt list-txt-m list-txt-style-num">
+                    <ul>
+                        <li><a href="http://baa.bitauto.com/qcmx/thread-8130175.html" target="_blank" title="日产第二代GTR">日产第二代GTR</a></li>
+                        <li><a href="http://baa.bitauto.com/qcmx/thread-8108876.html" target="_blank" title="向经典致敬 宝马503">向经典致敬 宝马503</a></li>
+                        <li><a href="http://baa.bitauto.com/qcmx/thread-8106701.html" target="_blank" title="京商的M3 GTS">京商的M3 GTS</a></li>
+                        <li><a href="http://baa.bitauto.com/qcmx/thread-8207853.html" target="_blank" title="中国萌物 吉利熊猫">中国萌物 吉利熊猫</a></li>
+                        <li><a href="http://baa.bitauto.com/qcmx/thread-8220247.html" target="_blank" title="宝马E65">宝马E65</a></li>
+                        <li><a href="http://baa.bitauto.com/qcmx/thread-8130175.html" target="_blank" title="日产第二代GTR">日产第二代GTR</a></li>
+                        <li><a href="http://baa.bitauto.com/qcmx/thread-8220247.html" target="_blank" title="宝马E65">宝马E65</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="layout-add">
+                <ins id="div_5c3fa72e-7c76-4eb6-9053-e4b18497ca5a" type="ad_play" adplay_ip="" adplay_areaname=""
+                     adplay_cityname="" adplay_brandid="" adplay_brandname="" adplay_brandtype=""
+                     adplay_blockcode="5c3fa72e-7c76-4eb6-9053-e4b18497ca5a"></ins>
+            </div>
+        </div>
+    </div>
+
+    <!--拍美女-->
+    <div class="container  margin-top-30 section-left-line h-belle">
+        ﻿<div class="section-header header1">
+            <div class="box">
+                <h2><a target="_blank" href="http://baa.bitauto.com/lady/">拍美女</a></h2>
+            </div>
+            <div class="more">
+                <a href="http://baa.bitauto.com/lady">丽人风尚论坛</a>
+                <a href="http://baa.bitauto.com/lady/index-68-all-1-1.html">香车美女</a>
+                <a href="http://baa.bitauto.com/lady/index-69-all-1-1.html">百变丽人</a>
+                <a href="http://baa.bitauto.com/lady/index-70-all-1-1.html">资源推荐</a>
+                <a href="http://baa.bitauto.com/lady/index-71-all-1-1.html">时尚生活</a>
+                <a href="http://baa.bitauto.com/lady/index-72-all-1-1.html">另类创作</a>
+            </div>
+        </div>
+
+        <div class="col-xs-9 section-left">
+            <div class="row block-3col-240">
+                <div class="col-xs-4">
+                    <div class="img-info-layout-vertical img-info-layout-baa img-info-layout-vertical-240160">
+                        <div class="img">
+                            <a target="_blank" href="http://baa.bitauto.com/lady/thread-9764470.html"><img src="http://pic.baa.bitautotech.com/usergroup/2016/9/27/0b9ecfc6aa98484f9ca1a7db4792c075_source.jpg"></a>
+                        </div>
+                        <ul class="p-list">
+                            <li class="name"><a target="_blank" href="http://baa.bitauto.com/lady/thread-9764470.html">天使之翼 轻盈绽放</a></li>
+                            <li class="num">
+                                <p><span><a target="_blank" href="http://i.yiche.com/u8603193/">麒麟1974</a></span><span>2016-12-31</span></p>
+                                <p><span>相机型号：NIKON D750</span></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="img-info-layout-vertical img-info-layout-baa img-info-layout-vertical-240160">
+                        <div class="img">
+                            <a target="_blank" href="http://baa.bitauto.com/lady/thread-9764470.html"><img src="http://pic.baa.bitautotech.com/usergroup/2016/9/27/0b9ecfc6aa98484f9ca1a7db4792c075_source.jpg"></a>
+                        </div>
+                        <ul class="p-list">
+                            <li class="name"><a target="_blank" href="http://baa.bitauto.com/lady/thread-9764470.html">天使之翼 轻盈绽放</a></li>
+                            <li class="num">
+                                <p><span><a target="_blank" href="http://i.yiche.com/u8603193/">麒麟1974</a></span><span>2016-12-31</span></p>
+                                <p><span>相机型号：NIKON D750</span></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="img-info-layout-vertical img-info-layout-baa img-info-layout-vertical-240160">
+                        <div class="img">
+                            <a target="_blank" href="http://baa.bitauto.com/lady/thread-9764470.html"><img src="http://pic.baa.bitautotech.com/usergroup/2016/9/27/0b9ecfc6aa98484f9ca1a7db4792c075_source.jpg"></a>
+                        </div>
+                        <ul class="p-list">
+                            <li class="name"><a target="_blank" href="http://baa.bitauto.com/lady/thread-9764470.html">天使之翼 轻盈绽放</a></li>
+                            <li class="num">
+                                <p><span><a target="_blank" href="http://i.yiche.com/u8603193/">麒麟1974</a></span><span>2016-12-31</span></p>
+                                <p><span>相机型号：NIKON D750</span></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-3 section-right">
+            <div class="layout-1">
+                <div class="section-header header3">
+                    <div class="box">
+                        <h2>美女排行</h2>
+                    </div>
+                </div>
+                <div class="list-txt list-txt-m list-txt-style-num">
+                    <ul>
+                        <li><a href="http://baa.bitauto.com/lady/thread-8132655.html" target="_blank" title="柔美丽人 漫步梨园">柔美丽人 漫步梨园</a></li>
+                        <li><a href="http://baa.bitauto.com/lady/thread-8131597.html" target="_blank" title="花臂新娘 草原个性婚纱写真">花臂新娘 草原个性婚纱写真</a></li>
+                        <li><a href="http://baa.bitauto.com/lady/thread-8136396.html" target="_blank" title="粉红靓模 俏皮卖萌">粉红靓模 俏皮卖萌</a></li>
+                        <li><a href="http://baa.bitauto.com/lady/thread-8120900.html" target="_blank" title="黑丝女郎 致命诱惑">黑丝女郎 致命诱惑</a></li>
+                        <li><a href="http://baa.bitauto.com/lady/thread-8130378.html" target="_blank" title="唯美新娘 清新靓丽国际范">唯美新娘 清新靓丽国际范</a></li>
+                        <li><a href="http://baa.bitauto.com/lady/thread-8118782.html" target="_blank" title="阳光丽人 白裙飘飘展笑颜">阳光丽人 白裙飘飘展笑颜</a></li>
+                        <li><a href="http://baa.bitauto.com/lady/thread-8136944.html" target="_blank" title="精致靓模 灵气逼人">精致靓模 灵气逼人</a></li>
+                        <li><a href="http://baa.bitauto.com/lady/thread-8198386.html" target="_blank" title="夕阳武士 冷艳御姐范">夕阳武士 冷艳御姐范</a></li>
+                        <li><a href="http://baa.bitauto.com/lady/thread-8136817.html" target="_blank" title="长发佳丽 甜美可爱">长发佳丽 甜美可爱</a></li>
+                        <li><a href="http://baa.bitauto.com/lady/thread-8101904.html" target="_blank" title="夕阳少女红似火 奔放浓烈">夕阳少女红似火 奔放浓烈</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--排行榜-->
+    <div class="container  margin-top-30">
+        <div class="section-header header1">
+            <div class="box">
+                <h2>排行榜</h2>
+            </div>
+        </div>
+        <div class="row ranking-baa">
+            <div class="col-xs-3">
+                <h3>帖子总榜</h3>
+                <div class="list-txt list-txt-m list-txt-style-num">
+                    <ul>
+                        ﻿
+                        <li><a target="_blank" title="【提车作业】我家灰太狼诞生全记录" href="http://baa.bitauto.com/lavida/thread-3807107.html">【提车作业】我家灰太狼诞生全记录</a></li>
+                        <li><a target="_blank" title="沈阳鹏少-新福克斯三厢阳光棕1.6AT风尚提车作业" href="http://baa.bitauto.com/focus/thread-3810136.html">沈阳鹏少-新福克斯三厢阳光棕1.6AT风</a></li>
+                        <li><a target="_blank" title="【朗动提车作业】朗动1.6AT（极地白）尊贵型--提车作业" href="http://baa.bitauto.com/langdong/thread-3804936.html">【朗动提车作业】朗动1.6AT（极地白）尊贵</a></li>
+                        <li><a target="_blank" title="1.8T旗舰腾一个月用车感受+精美照片" href="http://baa.bitauto.com/sagitar/thread-3806375.html">1.8T旗舰腾一个月用车感受+精美照片</a></li>
+                        <li><a target="_blank" title="提车作业~北京-新小福1.6自动白色风尚版（已补图）" href="http://baa.bitauto.com/focus/thread-3805907.html">提车作业~北京-新小福1.6自动白色风尚</a></li>
+                        <li><a target="_blank" title="同事要了高尔夫，我提了1.4T旗舰新速腾" href="http://baa.bitauto.com/sagitar/thread-3812104.html">同事要了高尔夫，我提了1.4T旗舰新速腾</a></li>
+                        <li><a target="_blank" title="【哈弗M族酷我行】西安银色豪华版M4提车2月心得体会。" href="http://baa.bitauto.com/hafum4/thread-3807121.html">【哈弗M族酷我行】西安银色豪华版M4提车</a></li>
+                        <li><a target="_blank" title="【技术控】迈腾-----你需要知道和拥有的功能" href="http://baa.bitauto.com/magotan/thread-3806081.html">【技术控】迈腾-----你需要知道和拥有的</a></li>
+                        <li><a target="_blank" title="1.6黑朗自动领先型提车作业" href="http://baa.bitauto.com/langdong/thread-3806438.html">1.6黑朗自动领先型提车作业</a></li>
+                        <li style="background:none"><a target="_blank" title="9.19 新速腾1.4T手豪提车" href="http://baa.bitauto.com/sagitar/thread-3805201.html">9.19 新速腾1.4T手豪提车</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-3">
+                <h3>地区榜</h3>
+                <div class="list-txt list-txt-m list-txt-style-num">
+                    <ul>
+
+                        <li><a target="_blank" href="http://baa.bitauto.com/hb/" target="_blank">河北小靖专用论坛2</a></li>
+
+                        <li><a target="_blank" href="http://baa.bitauto.com/cccccccaaaaaaa/" target="_blank">测死图片</a></li>
+
+                        <li><a target="_blank" href="http://baa.bitauto.com/23123/" target="_blank">131231</a></li>
+
+                        <li><a target="_blank" href="http://baa.bitauto.com/12312/" target="_blank">江西省论坛</a></li>
+
+                        <li><a target="_blank" href="http://baa.bitauto.com/jiabei/" target="_blank">jiabei</a></li>
+
+                        <li><a target="_blank" href="http://baa.bitauto.com/ly/" target="_blank">李彦区域论坛</a></li>
+
+                        <li><a target="_blank" href="http://baa.bitauto.com/jxjx3/" target="_blank">jxjx3</a></li>
+
+                        <li><a target="_blank" href="http://baa.bitauto.com/jxjx2/" target="_blank">jxjx2</a></li>
+
+                        <li><a target="_blank" href="http://baa.bitauto.com/aaaa/" target="_blank">aaaa</a></li>
+
+                        <li><a target="_blank" href="http://baa.bitauto.com/bj/" target="_blank">北京论坛</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-3">
+                <h3>车型榜</h3>
+                <div class="list-txt list-txt-m list-txt-style-num">
+                    <ul>
+                        ﻿
+                        <li><a target="_blank" href="http://car.bitauto.com/suteng/">速腾</a></li>
+                        <li><a target="_blank" href="http://car.bitauto.com/tiguan/">途观</a></li>
+                        <li><a target="_blank" href="http://car.bitauto.com/keluzi/">科鲁兹</a></li>
+                        <li><a target="_blank" href="http://car.bitauto.com/dongfengyuedaqiyak2/">东风悦达起亚K2</a></li>
+                        <li><a target="_blank" href="http://car.bitauto.com/langyi/">朗逸</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-3">
+                <h3>主题榜</h3>
+                <div class="list-txt list-txt-m list-txt-style-num">
+                    <ul>
+                        ﻿
+                        <li><a target="_blank" href="http://baa.bitauto.com/sd/" target="_blank">易车山东车友会</a></li>
+
+                        <li><a target="_blank" href="http://baa.bitauto.com/gd/" target="_blank">广东</a></li>
+
+                        <li><a target="_blank" href="http://baa.bitauto.com/sh/" target="_blank">上海</a></li>
+
+                        <li><a target="_blank" href="http://baa.bitauto.com/bj/" target="_blank">北京</a></li>
+
+                        <li><a target="_blank" href="http://baa.bitauto.com/tj/" target="_blank">天津</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--友情链接 start-->
+    <div class="container  margin-top-link">
+    </div>
+    <!--友情链接 end -->
+    <!--footer start-->
+    ﻿
+    <script type="text/javascript">
+    (function (global) {
+        global.SidebarConfig = {
+            //头模块组，{'my':我的, 'planCar':计划购买的车, 'collectCar':收藏的车, 'viewedCar':浏览的车, 'coupon':优惠劵, 'toolkit':工具箱, 'comparison':车型对比}
+            headerModules: ['my', 'planCar', 'collectCar', 'viewedCar', 'coupon', 'toolkit'],
+            //脚模块组，{'answer':问答机器人, 'location':城市定位, 'feedback':问题反馈, 'qa':问卷调查, 'top':返回顶部}
+            footerModules: ['answer', 'location', 'qa', 'feedback', 'top'],
+            //是否开启点击body就关闭侧边栏
+            hideSidebarOnClickOutSide: true,
+            //qa（问卷调查）模块跳转链接地址，默认为
+            qaUrl: 'http://survey01.sojump.com/jq/7442576.aspx'
+        };
+    })(window);
+    </script>
+
+    ﻿<!--内容-->
+    ﻿<div class="foot_box">
+        <div class="copright_p">
+            <div class="w990">
+                <p>CopyRight &copy; 2000-2016 BitAuto,All Rights Reserved.&nbsp;&nbsp;版权所有&nbsp;&nbsp;北京易车信息科技有限公司</p>
+                <p class="r">购车咨询：4000-168-168 &nbsp;&nbsp;(周一至周日 9:00 &ndash; 21:00) 法定假日除外</p>
+            </div>
+        </div>
+        <div class="link_a">
+            <div class="w990">
+                <ul class="about">
+                    <li class="first"><a rel="nofollow" href="http://corp.bitauto.com/about/" target="_blank">关于易车</a></li>
+                    <li><a rel="nofollow" href="http://corp.bitauto.com/business/" target="_blank">业务体系</a></li>
+                    <li><a rel="nofollow" href="http://corp.bitauto.com/news/" target="_blank">易车动态</a></li>
+                    <li><a rel="nofollow" href="http://corp.bitauto.com/job/" target="_blank">加入易车</a></li>
+                    <li><a rel="nofollow" href="http://corp.bitauto.com/contact/" target="_blank">联系我们</a></li>
+                    <li><a rel="nofollow" href="http://corp.bitauto.com/about/legal-notices.shtml" target="_blank">法律声明</a></li>
+                    <li><a rel="nofollow" href="http://i.bitauto.com/authenservice/register/Licence.aspx" target="_blank">服务协议</a></li>
+                    <li><a rel="nofollow" href="http://ir.bitauto.com/" target="_blank">Investor Relations</a></li>
+                    <li><a rel="nofollow" href="http://dealer.easypass.cn/" target="_blank">易湃会员</a></li>
+                    <li><a rel="nofollow" href="http://www.bitauto.com/feedback/" target="_blank">意见反馈</a></li>
+
+                    <li class="last"><a rel="nofollow" href="javascript:Bitauto_IM.ImForm_submit()">在线咨询</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="http://js.inc.baa.bitautotech.com/c/c.js?s=quicklogin,Bitauto.iUtils,Bitauto.iMediator,Bitauto.Sidebar&v=1.1" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="http://g.yccdn.com"></script>
+    <script type="text/javascript" src="http://gimg.bitauto.com/js/senseNew.js"></script>
+    <script>
+    if (typeof (ChannelLOGCollector) == "undefined")
+        var ChannelLOGCollector = typeof (XCWebLogCollector) == "undefined" ? null : XCWebLogCollector;
+    </script>
+    <script type="text/javascript" src="http://bglog.bitauto.com"></script>
+    ﻿
+    <script type="text/javascript" src="http://image.bitautoimg.com/index/js/gotoIM.js?v=1.2"></script>
+    <!--footer end-->
+    <!--艾瑞统计-->
+    ﻿
+    <script src="http://img1.bitautoimg.com/stat/iwt20130216.js" type="text/javascript"></script>
+</body>
+</html>
+

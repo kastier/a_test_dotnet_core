@@ -1,0 +1,22 @@
+﻿
+@model IEnumerable<string>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>1</title>
+    <meta name="viewport" content="width=device-width"/>
+</head>
+<body>
+    <h1>Tag Helper Include</h1>
+    <ssi-include file="/include/001.shtml"> </ssi-include>
+   
+    <h1>Nginx SSI</h1>
+    <!--#include file="/include/001.shtml"-->
+</body>
+</html>
+

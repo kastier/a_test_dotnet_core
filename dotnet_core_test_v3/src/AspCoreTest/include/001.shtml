@@ -1,0 +1,2 @@
+<h2 style="color:blue;">001 Include页面</h2>
+<!--#include file="/include/001-01.shtml"--> 
